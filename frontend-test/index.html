@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreoTech API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CreoTech API Test Frontend</h1>
+
+    <section>
+        <h2>Services</h2>
+        <div id="services-list" class="card-container"></div>
+    </section>
+
+    <section>
+        <h2>Portfolio</h2>
+        <div id="portfolio-list" class="card-container"></div>
+    </section>
+
+    <section>
+        <h2>Team</h2>
+        <div id="team-list" class="card-container"></div>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form id="contact-form" class="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            <div id="form-status" class="status"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
